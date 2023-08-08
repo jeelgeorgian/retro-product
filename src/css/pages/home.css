@@ -1,0 +1,111 @@
+/* ---- header ---- */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  grid-gap: 1rem;
+}
+.header__heading {
+  font-size: 3.6rem;
+}
+.header__tagline {
+  font-size: 1.4rem;
+}
+
+/* ---- Categories ---- */
+.features {
+  padding: 10rem 3rem;
+}
+.features__heading {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2.4rem;
+}
+.features__container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  max-width: 768px;
+  margin: 0 auto;
+}
+.features__feature {
+  display: flex;
+  grid-gap: 2rem;
+  padding: 2rem 2rem;
+  border: 1px solid rgba(237, 242, 247, 1);
+  border-radius: 1rem;
+  align-items: center;
+}
+.features__feature__emoji {
+  font-size: 3rem;
+}
+.features__feature__definition {
+  font-size: 2rem;
+}
+
+/* ------- History -------- */
+
+.history {
+  padding: 10rem 3rem;
+  height: 50vh;
+  background-color: rgba(237, 242, 247, 1);
+}
+.history__heading {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2.4rem;
+}
+.history__container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2rem;
+  max-width: 768px;
+  margin: 0 auto;
+}
+.history__point {
+  display: flex;
+  grid-gap: 1rem;
+  align-items: center;
+}
+.history__point--term {
+  font-size: 2.6rem;
+  width: 6rem;
+  font-weight: 600;
+  position: relative;
+}
+.history__point--term::after {
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 3px;
+  background-color: transparent;
+  transform: translate(-50%, 2rem);
+  border-radius: 50%;
+  outline: 3px solid rgba(0, 255, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.history__point--explaination {
+  font-size: 1.6rem;
+}
+
+/* ========= media queries ========= */
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 80vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30rem 1fr;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .features__container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,35 @@
+/* header section */
+.header {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+.header .heading {
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  color: white;
+}
+/* about section */
+.about {
+  padding: 10rem 3rem;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2rem;
+}
+.about__heading {
+  font-size: 2.4rem;
+}
+.about__info {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+/* ====== Media Querries ====== */
+@media only screen and (max-width: 640px) {
+  .about {
+    padding: 6rem 3rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pager | Contact</title>
+
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/pages/contact.css" />
+
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header.html will be loaded here -->
+    <header id="header">HEADER</header>
+    <!-- Content based on the page is added here -->
+    <main id="main">
+      <!-- Header Section -->
+      <section class="header">
+        <h1 class="heading">Contact us</h1>
+      </section>
+      <!-- Contact form -->
+      <section class="contact">
+        <div class="contact__content">
+          <div class="contact__content__heading">Contact Details</div>
+          <div class="contact__content__info">#Street Address#</div>
+          <div class="contact__content__info">#Email Address#</div>
+          <div class="contact__content__info">#Phone Number#</div>
+        </div>
+        <form action="#" class="contact__form" method="GET">
+          <div class="contact__content__heading">Contact Form</div>
+          <div class="form-group">
+            <input type="text" placeholder="First Name" name="firstname" required />
+            <input type="text" placeholder="Last Name" name="lastname" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="yourname@example.com" name="email" required />
+            <input type="number" placeholder="Phone Number" name="phone" required />
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Message..."></textarea>
+          </div>
+          <div class="form-group">
+            <input
+              id="submit"
+              type="submit"
+              placeholder="yourname@example.com"
+              name="email"
+              required
+            />
+            <input type="reset" placeholder="Phone Number" name="phone" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- footer.html will be loaded here -->
+    <footer id="footer">FOOTER</footer>
+
+    <!-- JavaScript -->
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
