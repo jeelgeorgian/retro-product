@@ -1,6 +1,6 @@
 // JavaScript code
 
 // JQuery Code to load the header file
-$('header').load('/src/includes/header.html');
+$('header').load('header.html');
 // JQuery Code to load the footer file
-$('footer').load('/src/includes/footer.html');
+$('footer').load('footer.html');
